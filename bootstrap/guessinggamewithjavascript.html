@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guessing Game - Fullstack</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.center {
+    text-align: center;
+    color: red;
+}
+
+.subm-btn{
+  background:#FF0033;
+
+}
+
+body{
+    background-color : #00FFFF;
+    text-align : center;
+    font-family: "SIMPSON";
+}
+
+
+form {
+    
+    display: inline-block;
+    text-align: center;
+    }
+</style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <h1 class="center">Guessing Game</h1>
+
+    <div style="color:#FF0099">
+    <h3>Guess a number between 1 and 100!</h3>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!->;
+
+function guessGame(num){
+    
+    var answ = Math.floor(Math.random() * 6) + 1;
+    var counter = 0; 
+    var guess = document.getElementById("button").value;
+    
+    if (guess === answ){
+         document.write("Congratulations!");
+    }
+    
+    if (counter < 6) {
+    
+        if (guess < answ){
+        counter += 1;
+        document.write("Too low... try again")
+        
+    }
+        
+        counter += 1;
+        document.write("Too high... try again")
+
+    } 
+    
+}
+}
+
+
+<->
+</SCRIPT>
+
+<div class="container">
+   <div class="jumbotron" >
+
+<form action="action_page.php">
+  <input type="number" name="points"
+   min="0" max="100" step="1">
+  
+</form>
+<p><a class="btn btn-primary btn-lg subm-btn" role="button" >
+         Submit</a>
+      </p>
+
+   </div>
+   </div>
+
+   <SCRIPT LANGUAGE ="JavaScript">
+  
+
+
+
+  </body>
+</html>
