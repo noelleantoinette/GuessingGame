@@ -1,0 +1,24 @@
+function guessGame(){
+    
+    var answ = Math.floor(Math.random() * 6) + 1;
+    var counter = 0; 
+    var guess = document.forms.submit.value;
+    
+    if (guess === answ){
+         document.write("Congratulations!");
+    }
+    
+    if (counter < 6) {
+    
+        if (guess < answ){
+        counter += 1;
+        document.write("Too low... try again")
+        
+    }
+        
+        counter += 1;
+        document.write("Too high... try again")
+
+    } 
+    
+}

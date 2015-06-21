@@ -1,0 +1,48 @@
+// save main.css
+
+
+.center {
+    text-align: center;
+    color: red;
+    font-family: "SIMPSON";
+}
+
+.subm-btn{
+  background:#FF0033;
+
+}
+
+.plyagn-btn{
+  background:#660099;
+}
+
+}
+
+/*.bgpat{
+  background-image:url(./bootstrap/indexbg.jpg)
+  
+  height:500px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+.testimg{
+  background-image: url(../bootstrap/bkgr.jpg);
+  width: 300px;
+  height: 300px;
+  border: solid 2px;
+  text-shadow: white 0px 0px 2px;
+  font-size: 16px;
+  background-size: 150px;
+}
+
+body{
+  background-image:url(../bootstrap/indexbg.jpg)
+}
+
+
+form {
+    
+    display: inline-block;
+    text-align: center;
+    }

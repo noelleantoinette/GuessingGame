@@ -1,0 +1,61 @@
+.center {
+    text-align: center;
+    color: red;
+    font-family: "SIMPSON";
+    background-color: #CCFFFF;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whitebg {
+    text-align: center;
+    font-family: "SIMPSON";
+    background-color: #F0E6F5;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whitebgplay {
+    text-align: center;
+    font-family: "SIMPSON";
+    background-color: #CC43A3;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subm-btn {
+    background: #FF0033;
+}
+
+.plyagn-btn {
+    background: #660099;
+}
+}
+.bgpat {
+    background-image: url(./bootstrap/bkrg.jpg);
+}
+.headbg {
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 300px;
+    margin-right: auto;
+}
+.elwidth {
+    width: 100px;
+}
+* {
+    font-family: 'Simpson';
+}
+body {
+    background-image: url(./bootstrap/indexbg.jpg)
+}
+form {
+    display: inline-block;
+    text-align: center;
+}
