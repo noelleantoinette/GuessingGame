@@ -8,7 +8,6 @@ $(document).ready(function() {
     var test = true;
 
     var numberOutp = function() {
-        console.log('running outp')
         $('h3').text("Guesses so far: " + loop)
 
         if ((currentGuess < 1) || (currentGuess > 100)) {
@@ -68,9 +67,7 @@ $(document).ready(function() {
     // number generator 
 
     var randomNum = function(min, max) {
-
         answer = Math.floor(Math.random() * (max - min + 1) + min);
-        console.log(answer + 'answer')
 
     };
 
@@ -78,17 +75,13 @@ $(document).ready(function() {
 
     var prevGuess = function(arr) {
         for (var i = 1; i < arr.length; i++) {
-            console.log("currentGuess is " + currentGuess + " arr.[i-1] is " + arr[i - 1])
             if (currentGuess == Number(arr[i - 1])) {
-
                 $('h2').text("You already tried " + currentGuess + "!")
                 test = true;
                 loop.pop();
-                console.log('prevGuess true');
                 return true;
             } else
-                console.log('prevGuess false');
-            test = false;
+                test = false;
             return false;
         };
     };
@@ -99,21 +92,16 @@ $(document).ready(function() {
         if (loop.length == 5) {
             $('h2').text("Game over! Better luck next time! Play again?");
             randomNum(1, 100);
-            console.log("gamvover answer is " + answer)
             emptyArr();
-            console.log(loop + "loop");
             $('h3').empty();
             test = false;
+            document.getElementById("guess").reset();
         }
     };
 
-
     randomNum(1, 100);
 
-    console.log(answer);
-
     // Submit button - checking guesses
-
 
     $(".subm-btn").click(function(event) {
         currentGuess = $('input').val();
@@ -129,6 +117,8 @@ $(document).ready(function() {
         } else if (test === false) {
             numberOutp();
         }
+        document.getElementById("guess").reset();
+        
     });
 
     // Play again button resetting game
@@ -139,6 +129,7 @@ $(document).ready(function() {
         $('h2').text("OK.... Here we go!")
         $('h3').empty();
         test = false;
+        document.getElementById("guess").reset();
     });
 
     // hint button
